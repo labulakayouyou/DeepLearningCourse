@@ -17,4 +17,5 @@ Y = np.array(y).reshape(-1, 1)
 Y = np.mat(Y)
 
 W = (X.T * X).I * X.T * Y
-print("X=\n", X, "\nY=\n", Y, "\nW的shape:\n", W)
+print("W的shape属性结果为：",np.shape(W))
+print("X=\n", X, "\nY=\n", Y, "\nW的值:\n", W)
