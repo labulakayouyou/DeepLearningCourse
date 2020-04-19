@@ -89,12 +89,9 @@ class Train:
             print("预测值：%f"% self.predict)
             self.target = self.y_data[self.n]
             print("标签值：%f"% self.target)
-
-        
-    
 route = r"D:\LaLaerzhouyanming\RuanJianAnZhuangMuLu2\TensorflowAnZhuang\homework_code\data\boston.csv"  
-train_epochs = eval(input("请输入您要进行迭代的次数："))        #迭代次数
-learning_rate = float(input("请输入你要调整的学习率："))    #学习率
+train_epochs = eval(input("请输入要进行迭代的次数："))        #迭代次数
+learning_rate = float(input("请输入要调整的学习率："))    #学习率
 T = Train(route)        #创建类Train对象T
 T.Standard()           #对特征数据进行归一化
 T.Matrix()            #模型定义与定义模型函数
